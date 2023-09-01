@@ -1,0 +1,235 @@
+Statistics Assignment - 1
+
+1. Plot a histogram,
+10, 13, 18, 22, 27, 32, 38, 40, 45, 51, 56, 57, 88, 90, 92, 94, 99
+
+
+Sol : To create a histogram for the given data, you first need to decide on the number of bins or intervals you want to use. 
+      The number of bins determines how many bars the histogram will have and can affect the interpretation of the data. 
+
+Eg -    Frequency
+      |      3
+      |      █
+      |      █
+      |      █     4
+      |      █     █
+      |      █     █
+      |      █     █   4
+      |      █     █   █
+      |      █     █   █
+      |      █     █   █
+      |      █     █   █   4
+      |      █     █   █   █
+--------------------------------
+   10    30    50    70    90
+
+he x-axis represents the range of values in your data, divided into bins.
+The y-axis represents the frequency (number of data points) within each bin.
+The bars (█) show the distribution of your data within each bin.
+
+
+
+2. In a quant test of the CAT Exam, the population standard deviation is known to be 100. A sample of 25 tests taken has a mean of 520. Construct an 80% CI about the mean.
+
+Sol: To construct an 80% confidence interval (CI) for the population mean when the population standard deviation is known, 
+     we can use the formula for the confidence interval:-
+       
+  EG - CI=520±1.2816( 25/100)
+
+Simplify:
+
+CI=520±1.2816(5/100)
+
+CI = 520 ± 1.2816 × 20
+CI=520±1.2816×20
+
+Lower Bound:
+520 − 1.2816 × 20 ≈ 520 − 25.632 ≈ 494.368 520−1.2816×20≈520−25.632≈494.368
+
+Upper Bound:
+520 + 1.2816 × 20 ≈ 520 + 25.632 ≈ 545.632 520+1.2816×20≈520+25.632≈545.632
+
+So, the 80% confidence interval for the population mean is approximately 
+[494.368, 545.632]
+[494.368,545.632]. This means you can be 80% confident that the true population mean falls within this range based on the sample data.
+
+
+
+3. A car believes that the percentage of citizens in city ABC that owns a vehicle is 60% or less. A sales manager disagrees with this. He conducted a hypothesis testing surveying 250 residents & found that 170 residents responded yes to owning a vehicle.
+A) State the null & alternate hypothesis.
+B) At a 10% significance level, is there enough evidence to support the idea that vehicle owner in ABC city is 60% or less.
+
+SOL: In hypothesis testing, you typically have a null hypothesis (H0) and an alternate hypothesis (H1) or sometimes called the null hypothesis and the alternative hypothesis. These hypotheses are used to test a specific claim or statement. In your scenario, you want to test whether there is enough evidence to support the idea that the vehicle ownership in ABC city is 60% or less.
+
+Null Hypothesis (H0):
+The null hypothesis is typically a statement of no effect or no difference. In this case, the null hypothesis would be that the percentage of citizens in city ABC who own a vehicle is equal to or greater than 60%.
+
+H0: P >= 0.60
+
+Alternate Hypothesis (H1):
+The alternate hypothesis is what you're trying to prove. In this case, it would be that the percentage of citizens in city ABC who own a vehicle is less than 60%.
+
+H1: P < 0.60
+
+Where:
+
+P represents the population proportion of citizens in city ABC who own a vehicle.
+Now, you want to test these hypotheses at a 10% significance level (α = 0.10). This means that you're willing to accept a 10% chance of making a Type I error (rejecting the null hypothesis when it is actually true).
+
+
+4. What is the value of the 99 percentile?
+2,2,3,4,5,5,5,6,7,8,8,8,8,8,9,9,10,11,11,12
+
+Sol: Next, calculate the rank (position) of the percentile you want to find. In this case, you want the 99th percentile, which means you want to find the value below which 99% of the data falls. To do this, you can use the following formula:-
+
+ank = (Percentile / 100) * (N + 1)
+
+Where:
+
+Percentile = 99
+N = Total number of data points = 20
+Rank = (99 / 100) * (20 + 1) = 0.99 * 21 ≈ 20.79
+
+Since the rank is not a whole number, you can interpolate between the 20th and 21st values in the sorted data set.
+
+The 20th value is 11, and the 21st value is 12.
+
+To interpolate, you can use the following formula:
+
+Interpolated Value = Value at Rank + (Fractional Rank * Interval)
+
+
+Where:
+
+Value at Rank = Value at the 20th position (which is 11)
+Fractional Rank = 0.79 (0.99 - 0.20, the portion between the 20th and 21st positions)
+Interval = Difference between the 21st and 20th values (12 - 11 = 1)
+Interpolated Value = 11 + (0.79 * 1) = 11 + 0.79 = 11.79
+
+So, the 99th percentile of the given data set is approximately 11.79. This means that 99% of the data points in the set are less than or equal to 11.79.
+
+
+5. In left & right-skewed data, what is the relationship between mean, median & mode?
+Draw the graph to represent the same.
+
+Sol: In left-skewed (negatively skewed) data, the relationship between the mean, median, and mode typically follows this pattern:
+
+The mean is typically less than the median.
+The median is typically less than the mode.
+In right-skewed (positively skewed) data, the relationship between the mean, median, and mode typically follows the opposite pattern:
+
+The mean is typically greater than the median.
+The median is typically greater than the mode.
+
+
+Left-Skewed Data:
+
+In left-skewed data, the tail of the distribution extends to the left (negative side), and most of the data points are concentrated on the right (positive side). This results in a mean that is pulled towards the left by the tail of the distribution, making it less than the median.
+
+Eg -        _________
+      /         \
+     /           \
+    /             \
+___/               \____
+   Mode   Median   Mean
+
+
+
+Right-Skewed Data:
+
+In right-skewed data, the tail of the distribution extends to the right (positive side), and most of the data points are concentrated on the left (negative side). This results in a mean that is pulled towards the right by the tail of the distribution, making it greater than the median. 
+
+Eg -        _________
+      \         /
+       \       /
+        \     /
+         \___/
+   Mean   Median   Mode
+
+
+It's important to note that while these relationships are typical for left and right-skewed data, there can be exceptions, especially in cases where the skewness is not extreme or when the distribution is complex. Additionally, the specific values of the mean, median, and mode will depend on the shape and characteristics of the data distribution.
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
